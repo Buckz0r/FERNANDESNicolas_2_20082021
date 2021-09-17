@@ -74,20 +74,19 @@ button {
     background-color: #F2F2F2;
 }
 /* NAV */
-.colorLiens2{
+.colorLien{
     color: black;
 }
-.bordureNav1 {
-    font-size: 18px;
-    padding: 25px 35px;
-    border-top: 3px solid #0065FC;
+.colorLien:hover {
+    color: #0065FC;
+    font-weight: bold;
 }
-.bordureNav2, .bordureNav3 {
+.bordureNav1, .bordureNav2, .bordureNav3 {
     font-size: 18px;
     padding: 25px 35px;
     border-top: 3px solid transparent;
 }
-.bordureNav2:hover {
+.bordureNav1:hover, .bordureNav2:hover, .bordureNav3:hover {
     border-top: 3px solid #0065FC;
 }
 /* EN-TÊTE */
@@ -164,7 +163,7 @@ button {
     align-items: center;
     padding-bottom: 40px;
 }
-.parentIcon {
+.bulle-Info {
     width: 25px;
     height: 25px;
     border: 2px solid #f2f2f2;
@@ -327,7 +326,7 @@ button {
 .cubeActivity {
     width: 23%;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px 1px #F2F2F2;
+    box-shadow: 0 0 6px 0 #0000002e;
 }
 .cubeActivity:hover {
     transform: scale(1.03);
@@ -336,7 +335,7 @@ button {
 .cubeActivity2356 {
     width: 100%;
     border-radius: 15px ;
-    box-shadow: 5px 5px 5px 1px #F2F2F2;
+    box-shadow: 0 0 6px 0 #0000002e;
 }
 .cubeActivity2356:hover {
     transform: scale(1.03);
@@ -495,7 +494,7 @@ button {
         width: 100%;
     }
     .imgActivity1, .imgActivity2, .imgActivity3, .imgActivity4, .imgActivity5, .imgActivity6 {
-        height: 200px;
+        height: 150px;
     }
     .blockactivity2356 {
         height: auto;
@@ -511,7 +510,6 @@ button {
     .cubeActivity2356 {
         width: 45%;
         margin: 2%;
-        box-shadow: 1px 1px 17px -9px rgb(0 0 0 / 75%);
     }
     .cubeActivity {
         width: 45%;
@@ -519,9 +517,6 @@ button {
     }
 }
 @media screen and (max-width:600px) {
-    body. main {
-        width: 100%;
-    }
     .mediaNavLogo {
         display: flex;
         align-items: stretch;
@@ -541,24 +536,28 @@ button {
     }
     .bordureNav1 {
         border-top: none;
-        border-bottom: 2px solid #0065FC;
+        border-bottom: 3px solid #F2F2F2;
         padding: 10%;
         width: 100%;
     }
     .bordureNav2 {
         border-top: none;
-        border-bottom: 2px solid #F2F2F2;
+        border-bottom: 3px solid #F2F2F2;
         padding: 10%;
         width: 100%;
     }
-    .bordureNav2:hover {
+    .bordureNav2:hover, .bordureNav1:hover {
         border-top: none;
-        border-bottom: 2px solid #0065FC;
+        border-bottom: 3px solid #0065FC;
     }
     .bordureNav3 {
         border: none;
         padding: 10%;
         width: 100%;
+    }
+    .bulle-Info {
+        margin-left: 30px;
+        width: 10%;
     }
     .navHebergement {
         display: flex;
@@ -590,10 +589,50 @@ button {
     }
 }
 @media screen and (max-width:573px) {
+    h3 {
+        margin: 10px 0 0 0;
+    }
+    p {
+        margin: 10px 0 10px 0;
+    }
+    .detailCubeHebergement {
+        padding: 0;
+    }
     .mediaFlexBetween {
         display: block;
     }
+    .blockHebergement {
+        background-color: white;
+    }
+    .sizeHebergements {
+        margin: 0;
+    }
+    .sizePopulaire {
+        border-radius: 0;
+        margin: 0;
+    }
     .block1, .block2 {
         width: auto;
+    }
+    .footerBlock {
+        flex-wrap: wrap;
+    }
+    .cubeActivity {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+    .cubeActivity2356 {
+        width: 100%;
+    }
+    .blockactivity {
+        display: block;
+        flex-direction: column;
+    }
+    .blockactivity2356 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mediaCubeActivity {
     }
 }
