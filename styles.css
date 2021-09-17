@@ -1,40 +1,53 @@
 /* GENERAL */
-html,body {
-    font-family: Raleway;
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif; 
 }
-.flexCentre {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main, header {
+    width: 98%;
+    max-width: 1440px;
+    margin: auto;
 }
-.flexAround {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.flexBetween {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.flexColonneCentre {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.flexColonneAround {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.flexColonneBetween {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.decorationNone {
+a {
     text-decoration: none;
+    color: initial;
+}
+button {
+    border:none
+}
+#IconSearch {
+    display: none;
+}
+.flex-Center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-Around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-Between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-ColonneCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-ColonneAround {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.flex-ColonneBetween {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .bordureNone {
     border: none;
@@ -61,29 +74,21 @@ html,body {
     background-color: #F2F2F2;
 }
 /* NAV */
-.sizeNav {
-    height: 100px;
-}
-.sizeLiens {
-    width: 45%;
-}
-.sizeLien {
-    width: 140px;
-    height: 99px;
-}
 .colorLiens2{
     color: black;
 }
-.bordureNav {
-    border-top: 1px solid #0065FC;
+.bordureNav1 {
+    font-size: 18px;
+    padding: 25px 35px;
+    border-top: 3px solid #0065FC;
 }
-/* LOGO */
-.sizeLogo {
-    width: 120px;
-    height: 50px;
+.bordureNav2, .bordureNav3 {
+    font-size: 18px;
+    padding: 25px 35px;
+    border-top: 3px solid transparent;
 }
-.margeLogo {
-    margin-bottom: 10px;
+.bordureNav2:hover {
+    border-top: 3px solid #0065FC;
 }
 /* EN-TÊTE */
 .bordureSearch {
@@ -107,6 +112,7 @@ html,body {
     border-radius: 10px 0 0 10px;
 }
 .buttonSearch {
+    font-size: 16px;
     height: 50px;
     width: 120px;
     color: white;
@@ -117,6 +123,7 @@ html,body {
 .margeFiltre {
     margin-top: 50px;
     margin-bottom: 40px;
+    display: flex;
 }
 .filtres {
     display: flex;
@@ -129,7 +136,8 @@ html,body {
     border: 2px solid #F2F2F2;
     height: 50px;
     border-radius: 30px;
-    margin-right: 20px;
+    margin-right: 12px;
+    cursor: pointer;
 }
 .filtreTexteIcons:hover > .filtretexte {
     color: #0065FC;
@@ -139,10 +147,8 @@ html,body {
     background-color: #0065FC;
 }
 .filtreTexte {
-    height: 50px;
     padding-left: 20px;
     padding-right: 20px;
-    border-radius: 0 25px 25px 0;
 }
 .filtreIcons {
     margin-left: -2px;
@@ -156,20 +162,21 @@ html,body {
 .info {
     display: flex;
     align-items: center;
+    padding-bottom: 40px;
 }
 .parentIcon {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border: 2px solid #f2f2f2;
     border-radius: 25px;
-    margin-right: 5px;
+    margin-right: 15px;
 }
 /* HEBERGEMENTS */
 .sizeHebergements {
     flex: 2;
     height: 650px;
     margin-right: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .blockHebergement {
     padding-left: 20px;
@@ -177,10 +184,14 @@ html,body {
 }
 .cubeHebergement {
     width: 30%;
-    height: auto;
     background-color: white;
-    padding: 1%;
+    padding: 5px;
     border-radius: 20px;
+    box-shadow: 0 0 6px 0 #0000002e;
+}
+.cubeHebergement:hover {
+    transform: scale(1.03);
+    transition: ease 0.4s;
 }
 .block1 {
     margin-bottom: 10px;
@@ -191,12 +202,15 @@ html,body {
 .detailCubeHebergement {
     width: 90%;
 }
+.price {
+    font-weight: bold;
+}
 .imgHebergement1 {
     background-image: url("./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 120px;
+    height: 100px;
     border-radius: 15px 15px 0 0;
 }
 .imgHebergement2 {
@@ -204,7 +218,7 @@ html,body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 120px;
+    height: 100px;
     border-radius: 15px 15px 0 0;
 }
 .imgHebergement3 {
@@ -212,7 +226,7 @@ html,body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 120px;
+    height: 100px;
     border-radius: 15px 15px 0 0;
 }
 .imgHebergement4 {
@@ -220,7 +234,7 @@ html,body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 120px;
+    height: 100px;
     border-radius: 15px 15px 0 0;
 }
 .imgHebergement5 {
@@ -228,7 +242,7 @@ html,body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 120px;
+    height: 100px;
     border-radius: 15px 15px 0 0;
 }
 .imgHebergement6 {
@@ -236,15 +250,19 @@ html,body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 120px;
+    height: 100px;
     border-radius: 15px 15px 0 0;
+}
+.showMore {
+    font-size: 18px;
+    padding: 20px;
 }
 /* POPULAIRES */
 .sizePopulaire {
     flex: 1;
     height: 650px;
     margin-left: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .blockPopulaire {
     padding-left: 20px;
@@ -253,8 +271,13 @@ html,body {
 .cubePopulaire {
     background-color: white;
     height: auto;
-    padding: 1% 0 1% 1%;
+    padding: 5px;
     border-radius: 20px;
+    box-shadow: 0 0 6px 0 #0000002e;
+}
+.cubePopulaire:hover {
+    transform: scale(1.03);
+    transition: ease 0.4s;
 }
 .blockPopulaire12 {
     margin-bottom: 20px;
@@ -306,10 +329,18 @@ html,body {
     border-radius: 15px;
     box-shadow: 5px 5px 5px 1px #F2F2F2;
 }
+.cubeActivity:hover {
+    transform: scale(1.03);
+    transition: ease 0.4s;
+}
 .cubeActivity2356 {
     width: 100%;
     border-radius: 15px ;
     box-shadow: 5px 5px 5px 1px #F2F2F2;
+}
+.cubeActivity2356:hover {
+    transform: scale(1.03);
+    transition: ease 0.4s;
 }
 /* Fin du réglage du bloc */
 .hauteurTitre {
@@ -372,15 +403,197 @@ html,body {
 }
 /* FOOTER */
 .footer {
-    height: 300px;
-    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
 }
-.tailleBlockFooter {
-    height: 150px;
+.footerBlock {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
 }
-.margeBlockFooter1 {
-    margin-left: 5%;
+.footerBlock123 {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
 }
 .margeBlockFooter3 {
-    margin-right: 15%;
+    margin-right: 10%;
+}
+.footerBlock123 > * {
+    margin-bottom: 10px;
+}
+.footerTitle {
+    margin-bottom: 15px;
+}
+.footercolor:hover {
+    color: #0065FC;
+}
+@media screen and (max-width:1253px) {
+    .mediaBlock {
+        flex-direction: column-reverse;
+        align-items: initial;
+    }
+    .sizeHebergements {
+        margin: 20px;
+    }
+    .sizePopulaire {
+        padding: 20px;
+        margin: 20px;
+    }
+    .mediaPopulaire {
+        flex-direction: initial;
+        justify-content: space-around;
+    }
+    .blockPopulaire12, .cubePopulaire {
+        margin-bottom: 0;
+        width: 30%;
+    }
+    .activity {
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width:950px) {
+    .margeFiltre {
+        flex-wrap: wrap;
+    }
+    .filtres {
+        flex-wrap: wrap;
+        padding-left: 20px;
+        margin-right: 0;
+    }
+    .filtreTexteIcons {
+        margin-top: 10px;
+    }
+    .mediaPopulaire {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .blockPopulaire12, .cubePopulaire {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+@media screen and (max-width:835px) {
+    .mediaFlexBetween {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .block1, .block2 {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 2%;
+        width: 48%;
+    }
+    .cubeHebergement {
+        margin: 2% 0;
+        width: 100%;
+    }
+    .imgActivity1, .imgActivity2, .imgActivity3, .imgActivity4, .imgActivity5, .imgActivity6 {
+        height: 200px;
+    }
+    .blockactivity2356 {
+        height: auto;
+        width: 100%;
+        order: 2;
+        flex-direction: row;
+    }
+    .blockactivity {
+        flex-direction: row;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .cubeActivity2356 {
+        width: 45%;
+        margin: 2%;
+        box-shadow: 1px 1px 17px -9px rgb(0 0 0 / 75%);
+    }
+    .cubeActivity {
+        width: 45%;
+        margin: 2%;
+    }
+}
+@media screen and (max-width:600px) {
+    body. main {
+        width: 100%;
+    }
+    .mediaNavLogo {
+        display: flex;
+        align-items: stretch;
+        height: 143px;
+    }
+    .logo {
+        margin-top: 2%;
+        width: 50%;
+    }
+    .mediaNav {
+        display: flex;
+        justify-content: flex-end;
+        flex-flow: row wrap-reverse;
+        position: absolute;
+        width: 98%;
+        text-align: center;
+    }
+    .bordureNav1 {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        padding: 10%;
+        width: 100%;
+    }
+    .bordureNav2 {
+        border-top: none;
+        border-bottom: 2px solid #F2F2F2;
+        padding: 10%;
+        width: 100%;
+    }
+    .bordureNav2:hover {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+    }
+    .bordureNav3 {
+        border: none;
+        padding: 10%;
+        width: 100%;
+    }
+    .navHebergement {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+    .navActivity {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+    .navLogin {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+    #IconSearch {
+        display: flex;
+    }
+    .buttonSearch {
+        display: none;
+    }
+    .buttonSearch {
+        width: 50px;
+        border-radius: 10px;
+    }
+    .bordureSearch {
+        width: 330px;
+    }
+}
+@media screen and (max-width:573px) {
+    .mediaFlexBetween {
+        display: block;
+    }
+    .block1, .block2 {
+        width: auto;
+    }
 }
