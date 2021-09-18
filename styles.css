@@ -3,7 +3,12 @@ body {
     margin: 0;
     font-family: 'Raleway', sans-serif; 
 }
-main, header {
+main {
+    width: 98%;
+    max-width: 1440px;
+    margin: auto;
+}
+header {
     width: 98%;
     max-width: 1440px;
     margin: auto;
