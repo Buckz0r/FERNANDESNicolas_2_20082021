@@ -94,6 +94,7 @@ button {
     width: 400px;
     border-radius: 10px;
     border: 0.5px solid #F2F2F2;
+    margin-top: 25px;
 }
 .paddingSearch {
     padding-left: 20px;
@@ -120,8 +121,8 @@ button {
 }
 /* FILTRES */
 .margeFiltre {
-    margin-top: 50px;
-    margin-bottom: 40px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     display: flex;
 }
 .filtres {
@@ -476,6 +477,9 @@ button {
         margin-bottom: 10px;
         width: 100%;
     }
+    .hotel-price {
+        margin-bottom: 50px;
+    }
 }
 @media screen and (max-width:835px) {
     .mediaFlexBetween {
@@ -517,10 +521,13 @@ button {
     }
 }
 @media screen and (max-width:600px) {
+    .media-marge {
+        margin-left: 15px;
+    }
     .mediaNavLogo {
         display: flex;
         align-items: stretch;
-        height: 143px;
+        height: 140px;
     }
     .logo {
         margin-top: 2%;
@@ -533,17 +540,16 @@ button {
         position: absolute;
         width: 98%;
         text-align: center;
+        height: 140px;
     }
     .bordureNav1 {
         border-top: none;
         border-bottom: 3px solid #F2F2F2;
-        padding: 10%;
         width: 100%;
     }
     .bordureNav2 {
         border-top: none;
         border-bottom: 3px solid #F2F2F2;
-        padding: 10%;
         width: 100%;
     }
     .bordureNav2:hover, .bordureNav1:hover {
@@ -552,12 +558,13 @@ button {
     }
     .bordureNav3 {
         border: none;
-        padding: 10%;
         width: 100%;
     }
     .bulle-Info {
         margin-left: 30px;
-        width: 10%;
+        padding: 14px 14px;
+        width: 0;
+        height: 0;
     }
     .navHebergement {
         display: flex;
@@ -573,6 +580,7 @@ button {
         display: flex;
         justify-content: center;
         width: 50%;
+        text-align: end;
     }
     #IconSearch {
         display: flex;
@@ -632,7 +640,5 @@ button {
     .blockactivity2356 {
         flex-direction: column;
         align-items: center;
-    }
-    .mediaCubeActivity {
     }
 }
