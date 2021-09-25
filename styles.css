@@ -598,7 +598,10 @@ button {
         border-radius: 10px;
     }
     .bordureSearch {
-        width: 330px;
+        width: 290px;
+    }
+    .recherche {
+        width: 190px;
     }
 }
 @media screen and (max-width:573px) {
