@@ -328,7 +328,6 @@ button {
     width: 23%;
     height: 600px;
 }
-/* Réglage du bloc */
 .cubeActivity {
     width: 23%;
     border-radius: 15px;
@@ -347,7 +346,6 @@ button {
     transform: scale(1.03);
     transition: ease 0.4s;
 }
-/* Fin du réglage du bloc */
 .hauteurTitre {
     height: 70px;
 }
